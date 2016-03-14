@@ -3,4 +3,4 @@ First task for Yalantis
 
 Used Picasso for loading images. 
 
-Possble mistakes: different padding between elements of LinearView, different thickness of dividers, deffirent localization.
+Possble mistakes: different padding between elements of LinearLayout, different thickness of dividers, deffirent localization.
