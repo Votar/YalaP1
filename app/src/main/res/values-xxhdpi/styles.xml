@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="TitleContentBox">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/title_content_text_size</item>
+        <item name="android:paddingBottom">@dimen/title_content_padding</item>
+    </style>
+
+
+    <style name="styleTagInWorking">
+
+        <item name="android:background">@drawable/rounded_corner </item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/tag_stage_padding</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:paddingBottom">@dimen/title_content_padding</item>
+    </style>
+
+    <style name="styleContentBlocks">
+        <item name="android:paddingTop">@dimen/content_start_end_padding</item>
+        <item name="android:paddingBottom">@dimen/content_start_end_padding</item>
+
+    </style>
+
+    <style name="styleContentField">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/content_field_text_size</item>
+        <item name="android:gravity">end</item>
+
+    </style>
+    <style name="styleContentTag">
+        <item name="android:textColor">@color/colorTextTag</item>
+        <item name="android:textSize">@dimen/content_tag_text_size</item>
+    </style>
+
+    <style name="styleContentDetails" parent="@style/styleContentField">
+        <item name="android:paddingTop">@dimen/content_start_end_padding</item>
+        <item name="android:paddingBottom">@dimen/content_start_end_padding</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:scrollbars">vertical</item>
+
+    </style>
+
+    <style name="styleImageDetails">
+       <item name="android:minWidth"> @dimen/minImageWidth</item>
+       <item name="android:minHeight"> @dimen/minImageHeight</item>
+        <item name="android:maxWidth"> @dimen/maxImageWidth</item>
+        <item name="android:maxHeight"> @dimen/maxImageHeight</item>
+    </style>
+
+
+</resources>

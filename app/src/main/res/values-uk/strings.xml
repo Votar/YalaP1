@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YalaP1</string>
+    <string name="tmp_Fragment_title" translatable="false"></string>
+    <string name="tmp_content_tag">У роботі</string>
+    <string name="tmp_content_title">Комунальне господарство</string>
+    <string name="tmp_created">Створено</string>
+    <string name="tmp_deadline_field">Зареєстровано</string>
+    <string name="tmp_deadline_tag">Вирішити до</string>
+    <string name="tmp_details">Відкритий космос прямо над головою. </string>
+    <string name="tmp_ex_created">25 лютого 2016</string>
+    <string name="tmp_exec_field">Дніпропетровський МКВ №24</string>
+    <string name="tmp_exec_tag">Відповідальний</string>
+    <string name="tmp_image">зображення</string>
+    <string name="tmp_register">Зареєстровано</string>
+    <string name="tmp_register_field">26 лютого 2016</string>
+    <string name="tmp_register_tag">Зареєстровано</string>
+    <string name="tmp_selected">Обрано</string>
+</resources>

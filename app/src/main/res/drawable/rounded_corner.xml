@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- view background color -->
+    <solid
+        android:color="@color/colorAccent" >
+    </solid>
+
+    <!-- view border color and width -->
+    <stroke
+        android:width="0dp"
+        android:color="@color/colorAccent" >
+    </stroke>
+
+    <!-- If you want to add some padding -->
+    <padding
+        android:left="@dimen/tag_stage_padding"
+        android:top="@dimen/tag_stage_padding"
+        android:right="@dimen/tag_stage_padding"
+        android:bottom="@dimen/tag_stage_padding"    >
+    </padding>
+
+    <!-- Here is the corner radius -->
+    <corners
+        android:radius="24dp"   >
+    </corners>
+
+</shape>

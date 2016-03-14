@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+
+    <dimen name="scrollerPadding">8dp</dimen>
+    <dimen name="scroller_padding_start">4dp</dimen>
+
+    <dimen name="title_content_padding"> 8dp</dimen>
+    <dimen name="title_content_text_size">10pt</dimen>
+    <dimen name="tag_stage_padding">8dp</dimen>
+
+    <dimen name="content_start_end_padding">8dp</dimen>
+    <dimen name="content_tag_text_size">7pt</dimen>
+    <dimen name="content_field_text_size">8pt</dimen>
+
+
+    <dimen name="minImageWidth">150dp</dimen>
+    <dimen name="minImageHeight">150dp</dimen>
+    <dimen name="maxImageWidth">250dp</dimen>
+    <dimen name="maxImageHeight">250dp</dimen>
+    <dimen name="margin_between_images">6dp</dimen>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.bertalt.yalap1.MainActivity"
+    android:background="@color/colorBackgroundContent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:focusableInTouchMode="false" />
+</android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:paddingTop="@dimen/scroller_padding_start"
+        android:paddingLeft="@dimen/scrollerPadding"
+        android:paddingRight="@dimen/scrollerPadding"
+
+        android:layout_below="@+id/appbar">
+        <LinearLayout
+            android:id="@+id/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/separator"
+            android:dividerPadding="1dp"
+            android:showDividers="middle">
+            <RelativeLayout
+                android:id="@+id/lyTitleContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/styleContentBlocks">
+                <TextView
+                    android:id="@+id/tvTitleContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TitleContentBox"
+                    android:text="@string/tmp_content_title"/>
+                <TextView
+                    android:id="@+id/tvTagStage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/styleTagInWorking"
+                    android:text="@string/tmp_content_tag"
+                    android:layout_below="@+id/tvTitleContent"
+                    android:textSize="@dimen/content_tag_text_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lyRegisteredContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:theme="@style/styleContentBlocks">
+                <TextView
+                    android:id="@+id/tvRegisteredTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tmp_created"
+                    android:theme="@style/styleContentTag"
+                    android:layout_weight="2"/>
+                <TextView
+                    android:id="@+id/tvRegisteredField"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/styleContentField"
+                    android:text="@string/tmp_ex_created"
+                    android:layout_weight="1"/>
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyDeadlineContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:theme="@style/styleContentBlocks">
+                <TextView
+                    android:id="@+id/tvDeadlineTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/styleContentTag"
+                    android:text="@string/tmp_register_tag"
+                    android:layout_weight="2"/>
+                <TextView
+                    android:id="@+id/tvDeadlineField"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/styleContentField"
+                    android:text="@string/tmp_register_field"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyCreatedContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:theme="@style/styleContentBlocks">
+                <TextView
+                    android:id="@+id/tvCreatedTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/styleContentTag"
+                    android:text="@string/tmp_deadline_tag"
+                    android:layout_weight="2"/>
+                <TextView
+                    android:id="@+id/tvCreatedField"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/styleContentField"
+                    android:text="@string/tmp_deadline_field"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyExecutorContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:theme="@style/styleContentBlocks">
+                <TextView
+                    android:id="@+id/tvExecutorTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/styleContentTag"
+                    android:text="@string/tmp_exec_tag"
+                    android:layout_weight="2"/>
+                <TextView
+                    android:id="@+id/tvExecutorField"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/styleContentField"
+                    android:text="@string/tmp_exec_field"
+                    android:layout_weight="1"/>
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDetailsField"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/styleContentDetails"
+                        android:text="@string/tmp_details"
+                        android:gravity="start"
+                        android:layout_weight="1"/>
+
+
+        </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:scrollbars="horizontal" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">YalaP1</string>
+    <string name="tmp_Fragment_title" translatable="false">CE-1257218</string>
+    <string name="tmp_content_title">Public utilities</string>
+    <string name="tmp_content_tag">In process</string>
+    <string name="tmp_created">Created</string>
+    <string name="tmp_ex_created">25 february 2016</string>
+    <string name="tmp_register">Registered</string>
+    <string name="tmp_register_field">26 february 2016</string>
+    <string name="tmp_deadline_tag">Deadline</string>
+    <string name="tmp_deadline_field">29 february 2016</string>
+    <string name="tmp_exec_tag">Executor</string>
+    <string name="tmp_exec_field">Dnipropetrovsk\'y MVK #24</string>
+    <string name="tmp_register_tag">Registered</string>
+    <string name="tmp_selected">Selected</string>
+    <string name="tmp_image">image</string>
+    <string name="tmp_details">An open space directly overhead.</string>
+</resources>
