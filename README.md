@@ -4,3 +4,5 @@ First task for Yalantis
 Used Picasso for loading images. 
 
 Possble mistakes: different padding between elements of LinearLayout, different thickness of dividers, deffirent localization ot a same screen.
+
+# Не рабочий код. Нет build.gradle файла
