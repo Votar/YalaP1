@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Make shorts onCreate()
+     * Make shorter onCreate()
      */
     private void initReciclerView(){
 
