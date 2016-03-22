@@ -28,7 +28,7 @@ public class ImagesAdapter extends
     public static class ViewHolder extends RecyclerView.ViewHolder{
         // Your holder should contain a member variable
         // for any view that will be set as you render a row
-        public ImageView nextImageView;
+        public ImageView nextImageView; //[Comment] Wrong visibility modifier
 
         public ViewHolder(View itemView) {
 
@@ -40,7 +40,7 @@ public class ImagesAdapter extends
 
     @Override
     public ImagesAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-         mContext = parent.getContext();
+         mContext = parent.getContext(); //[Comment] Formatting
         LayoutInflater inflater = LayoutInflater.from(mContext);
 
         // Inflate the custom layout

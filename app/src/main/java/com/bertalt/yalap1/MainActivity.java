@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+//[Comment] Big text size
 public class MainActivity extends AppCompatActivity {
 
 
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         initReciclerView();
 
-       setCommonClickListener(findViewById(R.id.content_main));
+       setCommonClickListener(findViewById(R.id.content_main)); //[Comment] Wrong formatting
 
     }
 
@@ -57,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
             if(v instanceof TextView)
                 v.setOnClickListener(new ComonClickListener(this));
 
-        }
+        } //[Comment] Wrong formatting Use ctrl + shift + L
     }
 
     /**
      * Make shorter onCreate()
      */
-    private void initReciclerView(){
+    private void initReciclerView(){ //[Comment] RecyclerView
 
         RecyclerView rvImages = (RecyclerView) findViewById(R.id.rvImages);
         rvImages.setHasFixedSize(true);
@@ -101,8 +102,8 @@ public class MainActivity extends AppCompatActivity {
      *Generate list of links on images for Picasso and recyclerView
      */
     private ArrayList<String> generateLinkList(){
-        ArrayList list = new ArrayList<>();
-        list.add("http://www.jpost.com/HttpHandlers/ShowImage.ashx?id=277701&h=530&w=758");
+        ArrayList list = new ArrayList<>();//[Comment] Use abstraction instead of realization
+        list.add("http://www.jpost.com/HttpHandlers/ShowImage.ashx?id=277701&h=530&w=758"); //[Comment] Hardcode, put strings into <string-array />
         list.add("http://www.nasa.gov/sites/default/files/bwhi1apicaaamlo.jpg_large.jpg");
         list.add("http://media4.s-nbcnews.com/j/MSNBC/Components/Photo/_new/earth-space-540x380.grid-6x2.jpg");
 
@@ -116,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 // app icon in action bar clicked; goto parent activity.
-                this.finish();
+                this.finish(); //[Comment] Without this
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Initialization ClickListener for RecyclerView
      */
-    public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
+    public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener { //[Comment] You don't need it. Just set onClick for recyclerView item inside view holder
 
         private GestureDetector gestureDetector;
         private MainActivity.ClickListener clickListener;
@@ -151,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onLongPress(MotionEvent e) {
                     View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
                     if (child != null && clickListener != null) {
-                        clickListener.onLongClick(child, recyclerView.getChildPosition(child));
+                        clickListener.onLongClick(child, recyclerView.getChildPosition(child)); //[Comment] Deprecated
                     }
                 }
             });
@@ -162,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
             View child = rv.findChildViewUnder(e.getX(), e.getY());
             if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
-                clickListener.onClick(child, rv.getChildPosition(child));
+                clickListener.onClick(child, rv.getChildPosition(child)); //[Comment] Deprecated
             }
             return false;
         }

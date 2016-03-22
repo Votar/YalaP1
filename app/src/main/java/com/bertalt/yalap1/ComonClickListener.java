@@ -12,7 +12,7 @@ public class ComonClickListener implements View.OnClickListener {
     private Context mCtx;
     public ComonClickListener(Context context){
         mCtx = context;
-    }
+    } //[Comment] Maybe Common?
     @Override
     public void onClick(View v) {
 
